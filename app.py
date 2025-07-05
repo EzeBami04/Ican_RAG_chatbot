@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 # ==== SETUP ====
 load_dotenv()
-groq_api = os.getenv("GROQ_API_KEY")
+groq_api = os.getenv("GROQ_API")
 llm = ChatGroq(api_key=groq_api, model="Gemma2-9b-It")
 
 prompts = ChatPromptTemplate.from_template(
